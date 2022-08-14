@@ -1,0 +1,38 @@
+Build your own kernel by answer only 4 questions
+===========
+
+Getting started
+---------------
+
+FAQ:
+This script will download all of needed tools for android kernel build and make flashable zip created by AnyKernel at least.
+Let's answer first questions:
+- 1st Question:
+```
+Enter your kernel source dir:
+```
+Enter kernel root directory, for example:
+```
+kernel/xiaomi/msm8996
+```
+- 2nd Question:
+```
+Enter your device defconfig:
+```
+Enter your defconfig directory, for example:
+```
+kernel/xiaomi/msm8996/arch/arm64/configs/gemini_defconfig
+```
+- 3rd Question:
+```
+Enter device codename:
+```
+Enter device code names you want build, for example:
+```
+gemini, capricorn
+```
+- 4th Question:
+```
+Enter your kernel name:
+```
+Enter your kernel build name, it will be use in zip name and flashable zip script.
