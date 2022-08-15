@@ -8,9 +8,9 @@ CROSS_COMPILERS=$(pwd)/cross-compilers
 if [ -d "$CROSS_COMPILERS" ]; then
     echo "${red}cross-compilers are ready!${reset}"
 else
-    git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/ -b android-12.1.0_r22 cross-compilers/clang-12
-    git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 -b lineage-18.1 cross-compilers/gcc/aarch64/aarch64-linux-android-4.9
-    git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 -b lineage-18.1 cross-compilers/gcc/arm/arm-linux-androideabi-4.9
+    git clone https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/ -b android-12.1.0_r22 cross-compilers/clang-12 --depth 1
+    git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9 -b lineage-18.1 cross-compilers/gcc/aarch64/aarch64-linux-android-4.9 --depth 1
+    git clone https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9 -b lineage-18.1 cross-compilers/gcc/arm/arm-linux-androideabi-4.9 --depth 1
 fi
 
 # set path of cross-compilers
